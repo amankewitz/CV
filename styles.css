@@ -55,4 +55,44 @@
     color: #fff;
     margin-top: 2em;
   }
+  .cover-image {
+    width: 100%;        /* Ajusta el ancho de la imagen al tamaño de la pantalla */
+    height: auto;       /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave opcional */
+  }
+
+  .profile-image {
+    width: 180px;                  /* Ajusta el tamaño de la imagen de perfil */
+    height: 180px;                 /* Ajusta la altura de la imagen de perfil */
+    border-radius: 40%;            /* Hace que la imagen sea redonda */
+    object-fit: cover;             /* Ajusta la imagen para que llene el círculo */
+    border: 4px solid white;       /* Bordes blancos para destacar la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    margin-right: 20px;
+  }
+  #about {
+    margin-top: 50px; /* Ajusta este valor para aumentar o disminuir la distancia */
+  }
+
+  .profile-container {
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    margin: -62px; /* Espaciado alrededor del contenedor */
+    justify-content: center;
+    margin-left: -140px; /* Mueve el contenedor 20 píxeles a la izquierda */
+    margin-bottom: -30px; /* Añade espacio inferior para separar de la siguiente sección */
+
+  }
   
+  .profile-text h1 {
+    margin-bottom: 1px; /* Espacio entre el nombre y la descripción */
+  }
+  
+  .profile-text p {
+    color: #555; /* Color más suave para la descripción */
+  }
+
+  .profile-text {
+    margin-top: 25px;
+  }
