@@ -1,8 +1,2 @@
-for (let i
-     = 0; i
-     < array.length; i
-    ++) {
-    const element = array i
-];
-    
-}
+// Aquí puedes añadir funciones si necesitas interactividad
+console.log("Página de CV cargada");
