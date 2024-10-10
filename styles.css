@@ -86,7 +86,7 @@
   }
   
   .profile-text h1 {
-    margin-bottom: 1px; /* Espacio entre el nombre y la descripción */
+    margin-bottom: 2px; /* Espacio entre el nombre y la descripción */
   }
   
   .profile-text p {
