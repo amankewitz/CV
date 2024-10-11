@@ -1,98 +1,134 @@
-/* Reset de márgenes */
+/* Reset de márgenes y padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2em 0;
-  }
-  
-  header h1 {
-    margin-bottom: 0.2em;
-  }
-  
-  section {
-    padding: 1.5em;
-    margin: 1.5em auto;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.2em;
-    margin-bottom: 0.8em;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin: 0.8em 0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
-    margin-top: 2em;
-  }
-  .cover-image {
-    width: 100%;        /* Ajusta el ancho de la imagen al tamaño de la pantalla */
-    height: auto;       /* Mantiene la proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave opcional */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .profile-image {
-    width: 180px;                  /* Ajusta el tamaño de la imagen de perfil */
-    height: 180px;                 /* Ajusta la altura de la imagen de perfil */
-    border-radius: 40%;            /* Hace que la imagen sea redonda */
-    object-fit: cover;             /* Ajusta la imagen para que llene el círculo */
-    border: 4px solid white;       /* Bordes blancos para destacar la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
-    margin-right: 20px;
-  }
-  #about {
-    margin-top: 50px; /* Ajusta este valor para aumentar o disminuir la distancia */
-  }
+/* Estilos del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
 
-  .profile-container {
-    display: flex; /* Usa flexbox para alinear horizontalmente */
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    margin: -62px; /* Espaciado alrededor del contenedor */
-    justify-content: center;
-    margin-left: -140px; /* Mueve el contenedor 20 píxeles a la izquierda */
-    margin-bottom: -30px; /* Añade espacio inferior para separar de la siguiente sección */
+/* Estilos del header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
 
-  }
-  
-  .profile-text h1 {
-    margin-bottom: 2px; /* Espacio entre el nombre y la descripción */
-  }
-  
-  .profile-text p {
-    color: #555; /* Color más suave para la descripción */
-  }
+header h1 {
+  margin-bottom: 0.2em;
+}
 
-  .profile-text {
-    margin-top: 25px;
-  }
+/* Estilos de las secciones */
+section {
+  padding: 1.5em;
+  margin: 1.5em auto;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.8em;
+}
+
+/* Listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.8em 0;
+}
+
+/* Estilos del footer */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2em;
+}
+
+/* Estilos de la imagen de portada */
+.cover-image {
+  width: 100%; /* Ajusta el ancho de la imagen al tamaño de la pantalla */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave opcional */
+}
+
+/* Estilos de la imagen de perfil */
+.profile-container {
+  display: flex; /* Usa flexbox para alinear horizontalmente */
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  justify-content: center; /* Centra el contenido */
+  margin: -62px 0 -20px; /* Espaciado alrededor del contenedor */
+}
+
+.profile-image {
+  width: 180px; /* Ajusta el tamaño de la imagen de perfil */
+  height: 180px; /* Ajusta la altura de la imagen de perfil */
+  border-radius: 45%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Ajusta la imagen para que llene el círculo */
+  border: 4px solid white; /* Bordes blancos para destacar la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  margin-right: 30px; /* Reduce el margen derecho para acercar el texto */
+  margin-left: -90px; /* Opcional: remueve el margen izquierdo si lo había */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+
+/* Estilos del texto del perfil */
+.profile-text {
+  margin-top: 40px;
+}
+
+.profile-text h1 {
+  margin-bottom: 2px; /* Espacio entre el nombre y la descripción */
+}
+
+.profile-text p {
+  color: #555; /* Color más suave para la descripción */
+}
+
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

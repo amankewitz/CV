@@ -13,27 +13,65 @@
 
   <div class="profile-container">
     <!-- Imagen de perfil -->
-    <img src="perfil.JPG" alt="Foto de perfil" class="profile-image">
+    <img src="perfil.JPG" alt="Foto de perfil" class="profile-image" onclick="openModal()">
     <div class="profile-text">
       <h1>Alejandro Mankewitz Reyes</h1>
       <p>Ingeniero civil industrial major Data Science</p>
       <p>Experiencia laboral y de estudios en Chile, Estados Unidos y Alemania</p>
+      <p>(+56) - 9 9210 7217 - amankewitz@hotmail.com</p>
     </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
   </div>
 
   <section id="about">
     <h2>Sobre mí</h2>
-    <p>Profesional de TI con experiencia internacional en análisis de datos y gestión de emisiones de CO₂. Habilidad en liderazgo, desarrollo de modelos de datos y visualización con Power BI.</p>
+    <p>Ingeniero Civil Industrial major en Data Science Universidad Adolfo Ibáñez, Chile, complementado con un programa de intercambio de un año y medio en la Universidad WWU, Alemania. Durante su estancia, realizó su proyecto de título en Bechtle AG, Alemania, como Ingeniero Industrial en Data Science. Posee excelente liderazgo, productividad, perseverancia y habilidades blandas. Fundador y director de dos pymes. Candidato ideal para puestos que requieran desafío, iniciativa, flexibilidad y talento para la improvisación. Entusiasmado con la implementación de soluciones de Data Science para optimizar la utilización de datos y mejorar las predicciones. Experiencia laboral y de estudios en Chile, Estados Unidos y Alemania.</p>
   </section>
 
   <section id="experience">
     <h2>Experiencia Laboral</h2>
     <ul>
-      <li><strong>Bechtle AG, Alemania</strong> (Proyecto de Título)
-        <p>Determiné las emisiones de CO₂ de los paquetes distribuidos, desarrollando modelos de análisis y visualización de datos.</p>
+      <li><strong>Bechtle AG, Alemania</strong> Data Scientist
+        <p>Sep 2023 - Abr 2024</p>
+        <p>Esta experiencia laboral consistió en determinar las emisiones de CO2 de todos los paquetes distribuidos por la empresa, utilizando la data comoherramienta principal.<p>
+        </p> Primero, identifiqué los diferentes softwares utilizados en el proceso logístico, con el objetivo de consolidar la información relevante de cada paquete y extraer los parámetros más importantes junto a SQL.<p>
+        </p>A partir de esto, por medio de Python desarrollé un modelo que evaluaba la calidad de los datos entre estos tres sistemas, ya que a menudo había inconsistencias entre ellos.<p> 
+        </p> Posteriormente, por medio de Python creé un segundo modelo para calcular las emisiones de CO2, una vez que los datos de las tres bases se encontraban depurados. <p> 
+        </p>Finalmente, visualicé los resultados utilizando SQL y Power BI, generando un diagrama interactivo que permitía ver las emisiones de CO2 categorizadas por paquete.</p>
+        </p>
       </li>
-      <li><strong>Fundador y Director</strong> - PyMEs
-        <p>Dirigí dos empresas pequeñas, desarrollando habilidades en liderazgo y gestión de equipos.</p>
+      <li><strong>Kronox, Chile</strong> Software Implementer
+        <p>Ago 2022 - Dic 2022</p>
+        <p>Part time, Capstone project<p> 
+        </p>-Identificación y resolución de problemas operativos<p> 
+        </p>-Implementación de software<p> 
+        </p>-Utilización de bases datos para predecir resultados de ventas y optimizar estrategias.</p>
+        </p>
+      </li>
+      <li><strong>Treck S.A, Chile</strong> Operario
+        <p>Nov 2021 - Ene 2022</p>
+        <p>-Recepción y almacenamiento de mercancías<p> 
+        </p> -Aceptación de la entrega del inventario<p> 
+        </p>-Confirmación de inventario<p> 
+        </p>-Marcado y etiquetado de stock</p>
+      </li>
+      <li><strong>Vail Resorts, USA</strong> Múltiples asignaciones
+        <p>Feb 2022 - Abr 2022 / Dic 2020 - Abr 2021 / Dic 2019 - Abr 2020</p>
+        <p>Wor and Travel expereince</p>
+        </p>-Profesor de esquí </p>
+        </p>-Lift operator</p>
+        </p>-Dishwasher</p>
+        </p>-Busser </p> 
+        </p>-Ski valet </p>
+        </p>-Houseman </p>
+        </p>-Housekeeping</p>
+        </p>-Cocinero</p>
+        </p></p>
       </li>
     </ul>
   </section>
@@ -49,14 +87,29 @@
 
   <section id="contact">
     <h2>Contacto</h2>
-    <p>Email: alejandro@example.com</p>
-    <p>Teléfono: +56 9 1234 5678</p>
+    <p>Email: amankewitz@hotmail.com</p>
+    <p>Teléfono: +56 9 9210 7217</p>
   </section>
 
   <footer>
     <p>&copy; 2024 Alejandro Mankewitz. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JavaScript para abrir y cerrar el modal -->
+  <script>
+    function openModal() {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImage");
+      var profileImg = document.querySelector(".profile-image");
+
+      modal.style.display = "flex"; // Mostrar el modal
+      modalImg.src = profileImg.src; // Cambia la fuente de la imagen del modal
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none"; // Ocultar el modal
+    }
+  </script>
 </body>
 </html>
