@@ -132,3 +132,64 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  position: fixed; /* Fija el menú en la parte superior */
+  top: 0;
+  width: 100%; /* Para que ocupe el ancho de la pantalla */
+  z-index: 1000; /* Asegura que esté siempre por encima del contenido */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Agrega un margen superior al contenido para que no quede oculto debajo del menú fijo */
+body {
+  margin-top: 60px; /* Ajusta este valor según la altura del menú */
+}
+
+section {
+  padding-top: 60px; /* Ajusta según la altura de tu menú */
+  margin-top: -60px; /* Ajusta para alinear con el padding-top */
+}
+
+.cover-image {
+  margin-top: -60px; /* Ajusta este valor según la altura del menú */
+}
+
+/* Estilo para la sección "Sobre mí" */
+#about {
+  margin-top: 50px; /* Espacio adicional de 100 píxeles */
+}
+
+/* Asegúrate de que las demás secciones mantengan el margen que ya tienen */
+section {
+  padding: 1.5em;
+  margin: 1.5em auto; /* Mantener el margen automático para centrar */
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Espacio adicional entre secciones */
+}
